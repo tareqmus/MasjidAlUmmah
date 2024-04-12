@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lateef&display=swap'); /* For more stylized Arabic calligraphy */
+
+body {
+    font-family: 'Fahkwang', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #F5F5DC; /* A softer background reminiscent of aged parchment */
+}
+
+nav {
+    background-color: #008037; /* A vibrant green, symbolizing growth and vitality */
+    overflow: hidden;
+    padding: 0 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Added shadow for depth */
+}
+.arabic-text {
+    font-family: 'Amiri', serif; /* Use the 'Amiri' font, which is designed for Arabic script */
+    font-size: 1.5em; /* Increase font size; adjust as needed */
+    color: #005530; /* Change color for emphasis; choose what fits your design */
+    text-align: right; /* Align Arabic text to the right */
+}
+
+.widgets-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.logo-container img {
+    width: 60px; /* Logo size for visibility */
+    margin-right: 15px; /* Spacing from the logo to the site name */
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.logo {
+    width: 60px; /* Slightly larger for emphasis */
+    height: 60px;
+    margin-left: 10px; /* Adjusted margin for right alignment */
+}
+
+.site-name {
+    font-family: 'Lateef', cursive; /* More expressive for titles */
+    color: #FFFACD; /* Light golden color for elegance */
+    font-size: 28px; /* Larger for prominence */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-left: auto; /* Ensures nav links are on the left */
+}
+
+.nav-links a {
+    text-decoration: none;
+    padding: 14px 20px;
+    font-size: 16px;
+    color: #F0EAD6; /* Soft cream color for readability */
+    transition: color 0.3s; /* Smooth transition for hover effects */
+}
+
+.nav-links a:hover {
+    color: #FFD700; /* Gold color on hover for a distinguished look */
+}
+
+.main-section {
+    text-align: center;
+    color: #333;
+    background: url('images/islamicpattern.jpg') center/cover no-repeat; /* Ensure background covers section */
+    padding: 40px 20px; /* Increased padding for better spacing */
+    margin: 20px auto; /* Center section */
+    border-radius: 10px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* More pronounced shadow for depth */
+}
+
+.footer {
+    background-color: #006D5B;
+    color: #ffffff;
+    padding: 20px 0;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.2); /* Shadow at the top for depth */
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column; /* Stack content for better mobile responsiveness */
+    align-items: center; /* Center content */
+    gap: 10px; /* Space between items */
+}
+
+.footer-info {
+    font-size: 16px;
+    text-align: center; /* Ensure text is centered */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column; /* Stack nav items on smaller screens */
+        align-items: center; /* Center align items */
+        padding: 10px 0; /* Add padding for touch targets */
+    }
+
+    .nav-links a {
+        padding: 8px; /* Adjust padding for smaller screens */
+    }
+}

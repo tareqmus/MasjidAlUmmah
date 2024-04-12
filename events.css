@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fahkwang');
+
+body {
+    font-family: 'Fahkwang', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5DC; /* Aged parchment background for a warm, welcoming feel */
+}
+
+header {
+    background-color: #008037; /* A deep green, representing peace and tranquility */
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container img {
+    width: 60px; /* Logo size for visibility */
+    margin-right: 15px; /* Spacing from the logo to the site name */
+}
+
+.site-name {
+    font-family: 'Amiri', serif;
+    color: #FFFACD; /* Light golden for elegance and visibility */
+    margin: 0; /* Remove default margins for precise alignment */
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px; /* Spacing between navigation links */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #F0EAD6; /* Off-white for clear contrast against the green background */
+    font-size: 16px;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #FFD700; /* Gold for highlighting active or hovered links */
+}
+.arabic-text {
+    font-family: 'Amiri', serif; /* Use the 'Amiri' font, which is designed for Arabic script */
+    font-size: 1.5em; /* Increase font size; adjust as needed */
+    color: #005530; /* Change color for emphasis; choose what fits your design */
+    text-align: right; /* Align Arabic text to the right */
+}
+
+.events-section,
+.prayer-times-section {
+    background-color: #F5F5DC; /* Clear white background for these sections for readability */
+    border-radius: 8px; /* Slightly rounded edges for a modern look */
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.events-section h2,
+.prayer-times-section h2 {
+    font-family: 'Amiri', serif;
+    font-weight: bold; /* Make the font bolder to stand out */
+    color: #000000; 
+    text-shadow: 1px 1px 2px #555; /* Soft shadow for a 3D effect */
+}
+
+.event h3 {
+    font-family: 'Amiri', serif;
+    margin-top: 20px;
+}
+
+.widgets-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between widgets for a clean layout */
+}
+
+.footer {
+    background-color: #006D5B; /* Darker shade for contrast with the main content */
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer a {
+    color: #FFD700; /* Gold for consistency with links highlight */
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline; /* Underline on hover for clarity */
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        margin-top: 20px;
+    }
+
+    .nav-links li {
+        margin: 10px 0; /* Increase spacing for touch targets on mobile */
+    }
+
+    .events-section,
+    .prayer-times-section {
+        margin: 10px;
+        padding: 15px; /* Adjusted margins and padding for mobile screens */
+    }
+}

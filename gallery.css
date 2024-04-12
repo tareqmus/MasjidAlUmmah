@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lateef&display=swap'); /* For more stylized Arabic calligraphy */
+
+body {
+    font-family: 'Fahkwang', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #F5F5DC; /* A softer background reminiscent of aged parchment */
+}
+
+nav {
+    background-color: #008037; /* A vibrant green, symbolizing growth and vitality */
+    overflow: hidden;
+    padding: 0 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Added shadow for depth */
+}
+
+.arabic-text {
+    font-family: 'Amiri', serif; /* Use the 'Amiri' font, which is designed for Arabic script */
+    font-size: 1.5em; /* Increase font size; adjust as needed */
+    color: #005530; /* Change color for emphasis; choose what fits your design */
+    text-align: right; /* Align Arabic text to the right */
+}
+
+.gallery-section {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.gallery-title {
+    font-family: 'Amiri', serif;
+    margin-bottom: 20px;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Optional: adds rounded corners to your images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow to your images */
+}
+
+.widgets-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.logo-container img {
+    width: 60px; /* Slightly larger for emphasis */
+    margin-right: 15px; /* Spacing from the logo to the site name */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-name {
+    font-family: 'Lateef', cursive; /* More expressive for titles */
+    color: #FFFACD; /* Light golden color for elegance */
+    font-size: 28px; /* Larger for prominence */
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #F0EAD6; /* Soft cream color for readability */
+    font-size: 16px;
+    padding: 14px 20px;
+}
+
+.nav-links a:hover {
+    color: #FFD700; /* Gold color on hover for a distinguished look */
+}
+
+.footer {
+    background-color: #006D5B;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column; /* Stack content for better mobile responsiveness */
+    align-items: center; /* Center content */
+    gap: 10px; /* Space between items */
+}
+
+.footer-info {
+    font-size: 16px;
+    text-align: center; /* Ensure text is centered */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column; /* Stack nav items on smaller screens */
+        align-items: center; /* Center align items */
+        padding: 10px 0; /* Add padding for touch targets */
+    }
+
+    .nav-links a {
+        padding: 8px; /* Adjust padding for smaller screens */
+    }
+
+    .gallery-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}

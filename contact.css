@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lateef&display=swap'); /* For more stylized Arabic calligraphy */
+
+body {
+    font-family: 'Fahkwang', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #F5F5DC; /* Soft aged parchment for a warm, inviting background */
+}
+
+/* Navigation Bar Styles */
+nav {
+    background-color: #008037; /* Vibrant green for vitality */
+    overflow: hidden;
+    padding: 0 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Added shadow for depth */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 60px; /* Slightly larger for emphasis */
+    height: 60px;
+}
+
+.site-name {
+    font-family: 'Lateef', cursive; /* More expressive for titles */
+    color: #FFFACD; /* Light golden color for elegance */
+    font-size: 28px; /* Larger for prominence */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0; /* Adjusted for alignment */
+}
+
+.nav-links a {
+    text-decoration: none;
+    padding: 14px 20px;
+    font-size: 16px;
+    color: #F0EAD6; /* Soft cream color for readability */
+    transition: color 0.3s; /* Smooth transition for hover effects */
+}
+
+.nav-links a:hover {
+    color: #FFD700; /* Gold color on hover for a distinguished look */
+}
+
+/* Enhanced Contact Information Styles */
+.contact-info {
+    background-color: #ffffff; /* Maintains white background for contrast */
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px; /* Keeps optimal reading width */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Retains subtle shadow for depth */
+    font-family: 'Amiri', serif; /* Continues with elegant, readable font for content */
+    color: #004D40; /* Darker color for better readability against white background */
+}
+
+.contact-info h1 {
+    font-size: 32px; /* Increases size for heading to be more prominent */
+    color: #000000; /* Even darker shade for the title for better visibility */
+    margin-bottom: 20px; /* Adds space below the heading for visual separation */
+    font-weight: bold; /* Makes the title bold for emphasis */
+}
+
+.contact-info p {
+    font-size: 20px; /* Slightly larger than default for better readability */
+    color: #005530; /* A bit darker than the body text for hierarchical emphasis */
+    line-height: 1.6; /* Enhances readability */
+}
+
+.footer-content a {
+    color: #000000; /* Adjusts link color to gold for visibility and consistency with hover effect */
+}
+
+/* Adjustments for link colors in footer for clarity and accessibility */
+.footer-content a:hover {
+    color: #FFD700; /* Ensures that the hover color is gold for consistency */
+    text-decoration: underline; /* Underline on hover for clarity */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar, .nav-links {
+        flex-direction: column;
+    }
+
+    .logo {
+        margin: 0 auto; /* Centers the logo on smaller screens */
+    }
+
+    .nav-links a {
+        padding: 10px; /* Adjusts for touch-friendly navigation */
+    }
+}
